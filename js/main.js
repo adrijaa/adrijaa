@@ -14,7 +14,7 @@ var ajinkya = {} || ajinkya;
 
     var loadLatestPost = function()
     {
-        var req = gapi.client.plus.activities.list({userId :'107648012860845583983', collection:'public', maxResults:1});
+        var req = gapi.client.plus.activities.list({userId :'112402667623874654840', collection:'public', maxResults:1});
                 req.execute(function(resp){
 
                 renderLatestPost(resp);
@@ -29,7 +29,7 @@ var ajinkya = {} || ajinkya;
             $('#gplus-desc').addClass('textReady');
 
             $('#gplus-desc').html(profile.aboutMe); 
-            $('#myPhoto').attr('src', "https://plus.google.com/s2/photos/profile/107648012860845583983?sz=120");
+            $('#myPhoto').attr('src', "https://plus.google.com/s2/photos/profile/112402667623874654840?sz=120");
 
             loadLatestPost();   
         }
@@ -41,9 +41,9 @@ var ajinkya = {} || ajinkya;
     }
     window.onGApiLoad = function()
     {
-            gapi.client.setApiKey('AIzaSyD8n9WtQVSHqqfZcUo9Jtf4AQAshW6LgGw');
+            gapi.client.setApiKey('AIzaSyAX8VRxaKSwg_Z4k0_pN9rEoKN-NODpazc');
             gapi.client.load('plus', 'v1', function(){
-                var req = gapi.client.plus.people.get({userId :'107648012860845583983'});
+                var req = gapi.client.plus.people.get({userId :'112402667623874654840'});
                 req.execute(function(resp){
                 renderAboutMe(resp);
             });

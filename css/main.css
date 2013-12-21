@@ -16,7 +16,9 @@ h1 {
     margin-bottom: 20px;
     position: relative;
 }
-
+.anime {
+    position:absolute; top: 1%; right:1%; z-index:99;
+}
 .name-header {
     -webkit-animation: fadeInHeader 2s;
 }
