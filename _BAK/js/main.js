@@ -7,6 +7,7 @@ var ajinkya = {} || ajinkya;
         if(post && post.items && post.items.length > 0)
         {
             //console.log(post);
+            $('#latestPost').removeClass('noshow').removeClass('loading');
             $('#latestPost').html(post.items[0].object.content);
         }
     }
