@@ -9,7 +9,7 @@
 /*Icons*/
 @import url("icons/font-awesome.min.css");
 /*Google Fonts*/
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 
 /* Standar Styles --------------------------------------------------------*/
@@ -18,7 +18,7 @@ body{
 	line-height:24px;
 	background-color: #fff;
 	color: #6e7982;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 /* Let's get this party started */
 ::-webkit-scrollbar {
@@ -71,6 +71,12 @@ h1, h2, h3, h4, h5, h6 {
 	display:block;
 	clear:both;
 	content:" , ";
+}
+#myPhoto {
+display: block;
+max-width: 100%;
+border-radius: 50%;
+border: 2px dashed #fff;
 }
 .border_bottom{
 	border: 1px solid #e7e8e9;
