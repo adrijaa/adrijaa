@@ -6,7 +6,7 @@ var ajinkya = {} || ajinkya;
     {
         if(post && post.items && post.items.length > 0)
         {
-            //console.log(post);
+            console.log(post);
             $('#latestPost').removeClass('noshow').removeClass('loading');
             $('#latestPost').html(post.items[0].object.content);
         }
@@ -22,7 +22,7 @@ var ajinkya = {} || ajinkya;
     }
     var renderAboutMe = function(profile)
     {
-        //console.log(profile);
+        console.log(profile);
         if(profile && profile.aboutMe && profile.image)
         {
             $('#gplus-desc').removeClass('loading');
@@ -30,6 +30,7 @@ var ajinkya = {} || ajinkya;
 
             $('#gplus-desc').html(profile.aboutMe); 
             $('#myPhoto').attr('src', "https://plus.google.com/s2/photos/profile/112402667623874654840?sz=120");
+            //https://lh5.googleusercontent.com/-X6AI-xON1Q4/AAAAAAAAAAI/AAAAAAAAABI/Is8bS8JDvMM/photo.jpg?sz=50
 
             loadLatestPost();   
         }
